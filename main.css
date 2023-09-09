@@ -1,0 +1,155 @@
+body {
+    background-color: #CCC;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #080;
+    padding: 5px;
+}
+
+a:link {
+    /*ainda não visitado*/
+    color: rgb(252, 66, 252);
+}
+
+a:visited {
+    /*já visitado*/
+    color: #A0A;
+}
+
+a:hover {
+    color: #FFF;
+    background-color: #008;
+}
+
+a:active {
+    /*clicando em cima*/
+    color: #FFF;
+    background-color: #000;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #080;
+    color: #FFF;
+}
+
+th,
+tr,
+td {
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+tr:hover {
+    background-color: #BBB;
+    color: #FFF;
+    cursor: pointer;
+    /*mãozinha*/
+}
+
+td {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    border: 1px solid rgb(135, 54, 54)
+}
+
+li {
+    padding: 5px;
+}
+
+.menu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 1;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid #000;
+    background-color: #FFF;
+    display: none;
+    /*não mostra o submenu*/
+}
+
+.menu:hover .submenu {
+    /*quando passar o mouse em cima do menu, mostra o submenu*/
+    display: block;
+    /*mostra o submenu*/
+}
+
+h1 {
+    margin-top: 90px;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*
+td:first-child {
+    /*formata primeiro td de cada pai-tr
+    background-color: orange;
+    color: #FFF;
+}
+*/
+/*
+tr:first-child {
+    /*formata primeiro tr de cada pai-table
+    border: 4px solid rgb(62, 179, 214);
+}
+*/
+/*
+tr:last-child{
+    border: 4px solid rgb(6, 73, 93);
+}
+*/
+/*
+tr:nth-child(3n){ 
+    /*formata o 3o filho, a 3a linha filha tr da pai-table vai ser editada
+    background-color: aquamarine;
+}
+*/
+
+tr:nth-child(2n){
+    background-color: #008;
+    color: #FFF;
+    /*vai formatando de dois em dois*/
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus{
+    background-color: yellow;
+}
+
+/*pseudo-elementos*/
+
+/*
+a::before{
+    content: ">>"; /*adicionando caracteres, estes caracteres
+    color: #F00;
+}
+*/
